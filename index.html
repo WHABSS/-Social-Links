@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORÉ Wahabo - Mes Réseaux Sociaux</title>
+    <meta name="description" content="Retrouvez SORÉ Wahabo sur ses réseaux sociaux">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 30px;
+            padding: 40px 30px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: white;
+            box-shadow: 0 10px 30px rgba(30, 60, 114, 0.4);
+        }
+
+        h1 {
+            color: #1e3c72;
+            font-size: 28px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .bio {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .mission {
+            color: #2a5298;
+            font-size: 15px;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 18px 25px;
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link-btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            transition: left 0.3s ease;
+            z-index: 0;
+        }
+
+        .link-btn:hover:before {
+            left: 0;
+        }
+
+        .link-btn:hover {
+            color: white;
+            border-color: #1e3c72;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(30, 60, 114, 0.3);
+        }
+
+        .link-btn span {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .icon {
+            font-size: 28px;
+            min-width: 32px;
+            text-align: center;
+        }
+
+        .linkedin { border-left: 4px solid #0077B5; }
+        .facebook { border-left: 4px solid #1877F2; }
+        .tiktok { border-left: 4px solid #000000; }
+        .youtube { border-left: 4px solid #FF0000; }
+        .instagram { border-left: 4px solid #E4405F; }
+        .email { border-left: 4px solid #EA4335; }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            color: #999;
+            font-size: 13px;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .bio {
+                font-size: 15px;
+            }
+
+            .link-btn {
+                padding: 15px 20px;
+                font-size: 15px;
+            }
+
+            .icon {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="profile-img">👨‍💼</div>
+            <h1>SORÉ Wahabo</h1>
+            <p class="bio">Je suis un jeune passionné d'architecture sociale qui vous fait découvrir ses actions.</p>
+            <p class="mission">📺 Suivez ma série intitulée "Ma Mission"</p>
+        </div>
+
+        <div class="links">
+            <a href="https://www.linkedin.com/in/wahabo-sor%C3%A9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="link-btn linkedin" target="_blank" rel="noopener noreferrer">
+                <span>
+                    <span class="icon">💼</span>
+                    LinkedIn
+                </span>
+            </a>
+
+            <a href="https://www.facebook.com/share/1T8DQB892U/" class="link-btn facebook" target="_blank" rel="noopener noreferrer">
+                <span>
+                    <span class="icon">👥</span>
+                    Facebook
+                </span>
+            </a>
+
+            <a href="https://www.tiktok.com/@wahabo_sore" class="link-btn tiktok" target="_blank" rel="noopener noreferrer">
+                <span>
+                    <span class="icon">🎵</span>
+                    TikTok
+                </span>
+            </a>
+
+            <a href="https://www.youtube.com/@wahabosore" class="link-btn youtube" target="_blank" rel="noopener noreferrer">
+                <span>
+                    <span class="icon">📺</span>
+                    YouTube
+                </span>
+            </a>
+
+            <a href="https://www.instagram.com/wahabo__sore?igsh=a2trdHhlNnMweGg4" class="link-btn instagram" target="_blank" rel="noopener noreferrer">
+                <span>
+                    <span class="icon">📷</span>
+                    Instagram
+                </span>
+            </a>
+
+            <a href="mailto:wahabosore36@gmail.com" class="link-btn email">
+                <span>
+                    <span class="icon">✉️</span>
+                    Me contacter par email
+                </span>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 SORÉ Wahabo - Tous droits réservés</p>
+        </div>
+    </div>
+</body>
+</html>
